@@ -10,36 +10,111 @@
   <header class="header">
     <h1>Thomas Kweya Odongo</h1>
     <p>Software Engineer | Web Developer | Tech Enthusiast</p>
-  <nav class="navbar">
-    <div class="nav-left">
-      <a href="#home" class="btn">🏠 Home</a>
-      <a href="#experience" class="btn">💼 Experience</a>
-      <a href="#competencies" class="btn">⚙️ Competencies</a>
-      <a href="#academics" class="btn">🎓 Academics</a>
-      <a href="#portfolio" class="btn">📁 Portfolio</a>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#home" class="btn">🏠 Home</a>
+        <a href="#experience" class="btn">💼 Experience</a>
+        <a href="#competencies" class="btn">⚙️ Competencies</a>
+        <a href="#academics" class="btn">🎓 Academics</a>
+        <a href="#portfolio" class="btn">📁 Portfolio</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" id="search" placeholder="Search section..." />
+        <button onclick="searchSection()">🔍</button>
+      </div>
+    </nav>
+  </header>
 
-    </div>
-    <div class="nav-right">
-      <input type="text" id="search" placeholder="Search section..." />
-      <button onclick="searchSection()">🔍</button>
-    </div>
-  </nav>
   <main class="main">
-    <section id="home" class="section active"><h2>Home</h2><p>Welcome to my beautiful professional profile!</p></section>
-    <section id="portfolio" class="section"><h2>Portfolio</h2><p>Check out the exciting projects I've built.</p></section>
-    <section id="experience" class="section"><h2>Experience</h2><p>My professional journey and achievements.</p></section>
-    <section id="academics" class="section"><h2>Academics</h2><p>My academic background and certifications.</p></section>
-    <section id="competencies" class="section"><h2>Competencies</h2><p>Tools, technologies, and soft skills I offer.</p></section>
+    <section id="home" class="section active">
+      <h2>Home</h2>
+      <p>As a dedicated software engineer and technology enthusiast, I am deeply committed to harnessing my expertise to address complex challenges and drive meaningful advancements in the field of technology. My passion lies in creating innovative solutions that not only solve pressing problems but also contribute to the betterment of society and the world at large.</p>
+      
+      <h3>Mission</h3>
+      <p>My mission is to continually expand my knowledge, refine my skills, and foster collaboration within the dynamic realm of software engineering. By embracing innovation and leveraging cutting-edge technologies, I aim to deliver impactful, scalable, and sustainable solutions that address the evolving needs of businesses and communities.</p>
+      
+      <h3>Vision</h3>
+      <p>My vision is to be at the forefront of technological innovation, utilizing my expertise to design and implement transformative solutions that empower individuals, strengthen communities, and promote sustainable development. Through the responsible application of technology, I aspire to contribute to a future where progress and inclusivity go hand in hand.</p>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <p>Check out the exciting projects I've built.</p>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <h3>Alfajiri Networks – Nairobi, Kenya</h3>
+      <p><strong>Network & Operations Intern</strong> (June 2023 – August 2024)</p>
+      <ul>
+        <li>Designed and deployed fiber-optic internet for a 42-unit complex using MikroTik routers and switches; generated $1,000+ in monthly revenue.</li>
+        <li>Built an automated WiFi payment system with RADIUS authentication, VLANs, and Python scripting for access control.</li>
+        <li>Streamlined procurement strategies, cutting operational costs by 58%.</li>
+      </ul>
+
+      <h3>Esibila Secondary School – Luanda, Kenya</h3>
+      <p><strong>Teaching Assistant, Computer Studies</strong> (January 2021 – September 2021)</p>
+      <ul>
+        <li>Supported delivery of introductory computer studies curriculum.</li>
+        <li>Led programming labs for 120 junior high students to enhance rural digital literacy.</li>
+      </ul>
+
+      <h3>Leadership</h3>
+      <p><strong>ALU Code-Bit Students Club (Founder)</strong> – November 2024 – Present</p>
+      <ul>
+        <li>Launched a tech-focused student club for debugging challenges, peer learning, and innovation.</li>
+        <li>Collaborating with ALU leadership to formalize its recognition as an official student body.</li>
+      </ul>
+
+      <p><strong>Esibila Secondary School Soccer Team</strong> – Assistant Team Captain (2021)</p>
+      <ul>
+        <li>Organized practice sessions and maintained training resources.</li>
+        <li>Acted as a liaison between students, coaches, and school administrators.</li>
+      </ul>
+    </section>
+
+    <section id="academics" class="section">
+      <h2>Academics</h2>
+      <h3>African Leadership University (ALU) – Kigali, Rwanda</h3>
+      <p><strong>Bachelor of Science in Software Engineering</strong> | Expected Graduation: July 2027</p>
+      <p>GPA: 4.73/5.00 (≈3.78/4.00)</p>
+      <p><strong>Relevant Coursework:</strong> Object-Oriented Programming, Linux, Version Control, Multivariable Calculus, Linear Algebra with Applications, Probability and Statistics.</p>
+      <p><strong>Mastercard Foundation Scholar</strong> – Awarded for outstanding academic performance and leadership across Africa.</p>
+
+      <h3>Esibila Secondary School – Luanda, Kenya</h3>
+      <p><strong>KCSE Grade:</strong> A-</p>
+      <p><strong>Equity Leaders Program (ELP)</strong> – Post-high school merit-based training in leadership and career readiness.</p>
+    </section>
+
+    <section id="competencies" class="section">
+      <h2>Competencies</h2>
+      <p><strong>Technical Skills:</strong> Python, Shell Scripting, SQL, R, HTML, Git, Agile Methodologies</p>
+      <p><strong>Languages:</strong> Swahili, Luhya (Native and fluent writer)</p>
+      <p><strong>Interests:</strong> Acoustic Guitar, African Dance, Soccer</p>
+
+      <h3>Extracurricular Activities</h3>
+      <p><strong>Kenya Scouts Association – Robin Crew</strong> – Rover-Mate 2 (2019 – Present)</p>
+      <ul>
+        <li>Coordinated wilderness expeditions to enhance resilience and disaster preparedness.</li>
+      </ul>
+
+      <p><strong>Equity Wings to Fly Program</strong> – Mentor (2017 – Present)</p>
+      <ul>
+        <li>Mentor to high school students from underserved communities on academics and career planning.</li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="footer">
+    <p>Let's connect on: 
+      <a href="https://www.linkedin.com/in/thomas-odongo-0a0494272/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/TKcodes-bit" target="_blank">GitHub</a>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </p>
+    <p>© 2025 Thomas' Profile. All rights reserved.</p>
+  </footer>
+
   <script src="Tom.js"></script>
 </body>
-<footer class="footer">
-  <p>Let's connect on: 
-    <a href="https://www.linkedin.com/in/thomas-odongo-0a0494272/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/TKcodes-bit" target="_blank">GitHub</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-  </p>
-  <p>© 2025 Thomas' Profile. All rights reserved.</p>
-</footer>
 </html>
