@@ -6,7 +6,7 @@
 }
 
 :root {
-  --bg: #0d1b2a; /* Dark futuristic background */
+  --bg: #070c12; /* Dark futuristic background */
   --text: #e0e1dd; /* Light text */
   --accent: #00d4ff; /* Neon accent */
   --card: #1b263b; /* Card background */
@@ -16,7 +16,7 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Courier New', monospace;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif; /* Updated font-family */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
