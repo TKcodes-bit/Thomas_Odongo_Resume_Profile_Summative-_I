@@ -119,25 +119,21 @@
   </main>
 
   <footer class="footer">
-    <h2>Contact Me</h2>
-    <form onsubmit="return contactMe()">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required />
-    
-      <label for="contact">Email or Phone:</label>
-      <input type="text" id="contact" required />
-    
-      <label for="message">Message:</label>
-      <textarea id="message" rows="2" required></textarea>
-    
-      <button type="submit">Contact Me</button>
-    </form>
     <p>Let's connect on: 
       <a href="https://www.linkedin.com/in/thomas-odongo-0a0494272/" target="_blank">LinkedIn</a>
       <a href="https://github.com/TKcodes-bit" target="_blank">GitHub</a>
       <a href="https://www.facebook.com/" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/" target="_blank">Instagram</a>
     </p>
+    <form id="contactForm" action="mailto:t.odongo@alustudent.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    
+      <button type="submit">Send Message</button>
+    </form>
     <p>© 2025 Thomas' Profile. All rights reserved.</p>
   </footer>
 
