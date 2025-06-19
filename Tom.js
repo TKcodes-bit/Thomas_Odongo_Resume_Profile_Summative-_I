@@ -58,4 +58,3 @@ document.getElementById('search').addEventListener('keypress', function(e) {
     document.getElementById('search').value = '';
     showSection(document.querySelector('.section').id);
   })
-  
