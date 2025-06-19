@@ -16,7 +16,7 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Montserrat', 'Segoe UI', sans-serif; /* Updated font-family */
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -40,6 +40,12 @@ body {
 }
 
 /* Nav links */
+.nav-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .nav-left a {
   color: var(--text);
   text-decoration: none;
@@ -170,4 +176,69 @@ a:hover {
   width: 100%;
   border-radius: 16px 16px 0 0;
   box-shadow: 0 -2px 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .nav-left {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-right {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #search {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section {
+    margin: 4rem auto;
+    padding: 1rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .nav-left a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .nav-right button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .section {
+    padding: 0.8rem;
+  }
 }
