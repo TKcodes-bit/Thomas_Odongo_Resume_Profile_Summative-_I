@@ -86,7 +86,7 @@ document.getElementById('clear-btn')?.addEventListener('click', function() {
 
     const subject = `Message from ${name} (${contact})`;
     const body = encodeURIComponent(message);
-    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const mailtoLink = `mailto:t.odongo@alustudent..com?subject=${encodeURIComponent(subject)}&body=${body}`;
 
     window.location.href = mailtoLink;
     return false;
